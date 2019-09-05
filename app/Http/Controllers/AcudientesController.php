@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Padrino;
-use Illuminate\Http\JsonResponse;
+use App\Acudientes;
 use Illuminate\Http\Request;
 
-class PadrinoController extends Controller
+class AcudientesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,33 +35,27 @@ class PadrinoController extends Controller
      */
     public function store(Request $request)
     {
-        $padrino = new Padrino;
-        $padrino->numero_documento = '1029777548';
-        $padrino->nombre = 'Pepito';
-        $padrino->telefono ='33333888';
-        $padrino->email = 'padrino@email.com';
-        $padrino->save();
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Padrino  $padrino
+     * @param  \App\Acudientes  $acudientes
      * @return \Illuminate\Http\Response
      */
-    public function show(Padrino $padrino)
+    public function show(Acudientes $acudientes)
     {
-        $padrinos = Padrino::all();
-        return new JsonResponse($padrinos);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Padrino  $padrino
+     * @param  \App\Acudientes  $acudientes
      * @return \Illuminate\Http\Response
      */
-    public function edit(Padrino $padrino)
+    public function edit(Acudientes $acudientes)
     {
         //
     }
@@ -71,10 +64,10 @@ class PadrinoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Padrino  $padrino
+     * @param  \App\Acudientes  $acudientes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Padrino $padrino)
+    public function update(Request $request, Acudientes $acudientes)
     {
         //
     }
@@ -82,10 +75,10 @@ class PadrinoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Padrino  $padrino
+     * @param  \App\Acudientes  $acudientes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Padrino $padrino)
+    public function destroy(Acudientes $acudientes)
     {
         //
     }
