@@ -19,5 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('obtenerApadrinados','ApadrinadoController@show');
-Route::get('obtenerPadrinos','PadrinoController@show');
-Route::post('insPadrino','PadrinoController@store');
+
+Route::get('Padrinos','PadrinoController@show');
+Route::get('Padrinos/{id}','PadrinoController@consultaPadrino');
+Route::post('Padrinos','PadrinoController@store');

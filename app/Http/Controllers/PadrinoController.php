@@ -37,11 +37,16 @@ class PadrinoController extends Controller
     public function store(Request $request)
     {
         $padrino = new Padrino;
-        $padrino->numero_documento = '1029777548';
-        $padrino->nombre = 'Pepito';
-        $padrino->telefono ='33333888';
-        $padrino->email = 'padrino@email.com';
+        $padrino->numero_documento = $request->numero_documento;
+        $padrino->nombre = $request->nombre;
+        $padrino->telefono = $request->telefono;
+        $padrino->email = $request->email;
         $padrino->save();
+        $response = array(
+            'success'=> true,
+            'msg' => 'Insercion realizada correctamente'
+        );
+        return new JsonResponse($response);
     }
 
     /**
@@ -54,6 +59,13 @@ class PadrinoController extends Controller
     {
         $padrinos = Padrino::all();
         return new JsonResponse($padrinos);
+    }
+
+    public function consultaPadrino($id){
+
+        $padrino = Padrino::where('id', $id)->get();
+
+        return new JsonResponse($padrino);
     }
 
     /**
