@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Acudientes;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class AcudientesController extends Controller
@@ -14,7 +15,8 @@ class AcudientesController extends Controller
      */
     public function index()
     {
-        //
+        $acudientes = Acudientes::all();
+        return new JsonResponse($acudientes);
     }
 
     /**
