@@ -25,3 +25,4 @@ Route::get('Padrinos/{id}','PadrinoController@consultaPadrino');
 Route::post('Padrinos','PadrinoController@store');
 
 Route::resource('Acudientes','AcudientesController');
+Route::resource('Apadrinado','ApadrinadoController');

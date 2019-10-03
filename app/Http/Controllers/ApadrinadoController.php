@@ -9,7 +9,11 @@ use Illuminate\Http\Request;
 class ApadrinadoController extends Controller
 {
 
-
+    public function index()
+    {
+        $apadrinados = Apadrinado::with( 'Acudientes')->get();
+        return new JsonResponse($apadrinados);
+    }
 
     /**
      * Store a newly created resource in storage.

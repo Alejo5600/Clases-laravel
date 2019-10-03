@@ -4,9 +4,9 @@
     <list default="true" id="2783cd46-4bad-4ac5-9b57-99929214aec1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Acudientes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Acudientes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Apadrinado.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Apadrinado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AcudientesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AcudientesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Padrino.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Padrino.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApadrinadoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApadrinadoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,7 +154,7 @@
       <workItem from="1567639943962" duration="11143000" />
       <workItem from="1568764053811" duration="224000" />
       <workItem from="1568764281823" duration="901000" />
-      <workItem from="1569455095531" duration="5262000" />
+      <workItem from="1569455095531" duration="10682000" />
     </task>
     <servers />
   </component>
